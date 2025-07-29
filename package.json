@@ -2,6 +2,7 @@
   "name": "sennai-webzone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sennaiai.github.io/Sennai-s-Zone",
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
@@ -18,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "safe-audit": "npm audit --omit=dev"
+    "safe-audit": "npm audit --omit=dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -31,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
